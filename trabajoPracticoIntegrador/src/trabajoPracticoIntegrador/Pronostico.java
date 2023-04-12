@@ -1,15 +1,17 @@
-package modelo;
+package trabajoPracticoIntegrador;
 
 public class Pronostico {
 
-    private Partido partido;
-    private Equipo equipo;
-    private ResultadoEnum resultado;
-    private int puntos;
+	Partido partido;
+	Equipo equipo;
+	ResultadoEnum resultado;
+	int puntos;
+		
 	
-    public Pronostico() {
-		super();	
+	public Pronostico() {
+		super();
 	}
+
 
 	public Pronostico(Partido partido, Equipo equipo, ResultadoEnum resultado, int puntos) {
 		super();
@@ -19,45 +21,45 @@ public class Pronostico {
 		this.puntos = puntos;
 	}
 
+
 	public Partido getPartido() {
 		return partido;
 	}
+
 
 	public void setPartido(Partido partido) {
 		this.partido = partido;
 	}
 
+
 	public Equipo getEquipo() {
 		return equipo;
 	}
+
 
 	public void setEquipo(Equipo equipo) {
 		this.equipo = equipo;
 	}
 
+
 	public ResultadoEnum getResultado() {
 		return resultado;
 	}
+
 
 	public void setResultado(ResultadoEnum resultado) {
 		this.resultado = resultado;
 	}
 
+
 	public int getPuntos() {
 		return puntos;
 	}
 
+
 	public void setPuntos(int puntos) {
 		this.puntos = puntos;
 	}
-
-    
-	public int puntos (){
-		if(partido.resultado(equipo) == resultado) {
-			return 1;  //Si el resultado pronosticado del equipo es igual al resultado del equipo suma un punto
-	    }else {
-	        return 0; //Si es diferente no suma nada
-	     }
-	}
-    
+	
+	
 }

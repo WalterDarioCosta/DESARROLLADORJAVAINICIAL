@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-import modelo.Partido;
 
 public class TrabajoIntegrador {
 
@@ -13,11 +12,13 @@ public class TrabajoIntegrador {
 		 try {
 	            
 	                       
-	            for (String linea : Files.readAllLines(Paths.get("G:\\DESARROLLADOR JAVA INICIAL GitHub\\DESARROLLADORJAVAINICIAL\\TrabajoIntegrador\\src\\modelo\\resultados.csv"))) {
+	            for (String linea : Files.readAllLines(Paths.get("G:\\DESARROLLADOR JAVA INICIAL GitHub\\DESARROLLADORJAVAINICIAL"
+	            		+ "\\TrabajoIntegrador\\src\\modelo\\resultados.csv"))) {
 	                System.out.println(linea);
 	            }
 
-	            for (String linea : Files.readAllLines(Paths.get("G:\\DESARROLLADOR JAVA INICIAL GitHub\\DESARROLLADORJAVAINICIAL\\TrabajoIntegrador\\src\\modelo\\pronostico.csv"))) {
+	            for (String linea : Files.readAllLines(Paths.get("G:\\DESARROLLADOR JAVA INICIAL GitHub\\DESARROLLADORJAVAINICIAL"
+	            		+ "\\TrabajoIntegrador\\src\\modelo\\pronostico.csv"))) {
 	                System.out.println(linea);
 	            }
 
